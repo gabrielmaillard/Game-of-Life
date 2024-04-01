@@ -14,6 +14,7 @@ Watch as generations evolve in real-time with a dynamic visualization. The grid 
 
 Gain insights into the evolving population with comprehensive statistics:
 * Number of Cells Over Time: Track the fluctuation in the number of cells across generations.
+![Screenshot](README/Screenshot%20Number%20of%20cells.JPG)
 * Survival Rate: Monitor the percentage of cells that survive from one generation to the next.
 * Birth Percentage: Analyze the proportion of new cells born in each generation.
 * Death Percentage: Understand the rate of cell death in each generation.
