@@ -123,7 +123,6 @@ class GameGUI:
         self.canvas_stats.draw()
 
         self.axHeat.clear()
-        print(np.divide(self.game.numberOfGenerationsPerCell, self.game.generation_count))
         self.axHeat.imshow(np.divide(self.game.numberOfGenerationsPerCell, self.game.generation_count), cmap='hot', interpolation='nearest') #, extent=[0, self.game.size[0] * 1, 0, self.game.size[1] * 1])
 
         self.canvas_heat.draw()
@@ -134,7 +133,7 @@ class GameGUI:
         self.label_population_density.config(text=f"Population Density: {self.game.population_density[-1]*100:.2f}%")
 
         self.ax_survival.clear()
-        self.ax_survival.plot(range(len(self.game.survival_rate)), self.game.survival_rate, marker='o', label='Survival Rate', markersize=0)
+        self.ax_survival.plot(range(len(self.game.survival_rate)), self.game.survival_rate, marker='o', label='Survival Rate', markersize=0, color="red")
         self.ax_survival.set_title('Survival Rate Over Time')
         self.ax_survival.set_xlabel('Generation')
         self.ax_survival.set_ylabel('Survival Rate')

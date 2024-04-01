@@ -14,8 +14,9 @@ Watch as generations evolve in real-time with a dynamic visualization. The grid 
 
 Gain insights into the evolving population with comprehensive statistics:
 * Number of Cells Over Time: Track the fluctuation in the number of cells across generations.
-![Screenshot](README/Screenshot%20Number%20of%20cells.JPG)
+![Screenshot of the graph showing the number of cells as a function of generation](README/Screenshot%20Number%20of%20cells.JPG)
 * Survival Rate: Monitor the percentage of cells that survive from one generation to the next.
+![Screenshot of the graph showing the survival rate as a function of generation](README/Screenshot%20Survival%20rate.JPG)
 * Birth Percentage: Analyze the proportion of new cells born in each generation.
 * Death Percentage: Understand the rate of cell death in each generation.
 * Population Density: Explore the density of the cell population throughout the simulation.
@@ -24,7 +25,11 @@ Gain insights into the evolving population with comprehensive statistics:
 
 Visualize the distribution of cell activity across the grid with a heatmap. Bright spots indicate areas of high activity, while darker regions signify less active areas.
 
+![Screenshot of the heat map](README/Screenshot%20Heat%20map.JPG)
+
 ## Installation
+
+### Steps
 
 1. Clone the repository:
 ```
@@ -40,6 +45,17 @@ cd GameOfLife
 ```
 pip install -r requirements.txt
 ```
+
+### Dependencies
+
+* Tkinter: GUI toolkit for Python.
+* JSON: Handling configuration settings.
+* NumPy: Scientific computing library for numerical operations.
+* Matplotlib: Plotting library for visualization.
+
+## Configuration
+
+The size of the map and the initial probability of a cell being alive can be modified in the configuration.json file.
 
 ## Usage
 
